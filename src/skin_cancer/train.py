@@ -53,7 +53,12 @@ def main():
     model = build_skin_cancer_model()
     model.to(DEVICE)
 
-    criterion = nn.CrossEntropyLoss()
+    class_counts = train_df["label"].value_counts().sort_index().values
+    class_weights = 1.0 / torch.tensor(class_counts, dtype=torch.float)
+    class_weights = class_weights / class_weights.sum()
+    class_weights = class_weights.to(DEVICE)
+
+    criterion = nn.CrossEntropyLoss(weight=class_weights)
 
     optimizer = torch.optim.Adam(
         model.parameters(),
