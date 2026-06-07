@@ -3,6 +3,7 @@ cycler==0.12.1
 filelock==3.29.1
 fonttools==4.63.0
 fsspec==2026.4.0
+grad-cam==1.5.5
 Jinja2==3.1.6
 joblib==1.5.3
 kiwisolver==1.5.0
@@ -27,4 +28,5 @@ threadpoolctl==3.6.0
 torch==2.12.0
 torchvision==0.27.0
 tqdm==4.68.1
+ttach==0.0.3
 typing_extensions==4.15.0
