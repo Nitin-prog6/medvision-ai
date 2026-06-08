@@ -40,9 +40,23 @@ def predict_image(image_path):
         probabilities = torch.softmax(outputs, dim=1)[0]
         predicted_index = torch.argmax(probabilities).item()
 
+    all_probabilities = {
+        CLASS_NAMES[i]: float(probabilities[i])
+        for i in range(len(CLASS_NAMES))
+    }
+
+    sorted_probabilities = dict(
+        sorted(
+            all_probabilities.items(),
+            key=lambda item: item[1],
+            reverse=True
+        )
+    )
+
     return {
         "predicted_class": CLASS_NAMES[predicted_index],
         "confidence": float(probabilities[predicted_index]),
+        "probabilities": sorted_probabilities,
     }
 
 
@@ -52,3 +66,7 @@ if __name__ == "__main__":
 
     print("Prediction:", result["predicted_class"])
     print("Confidence:", round(result["confidence"] * 100, 2), "%")
+
+    print("\nClass Probabilities:")
+    for class_name, probability in result["probabilities"].items():
+        print(f"{class_name}: {probability * 100:.2f}%")
