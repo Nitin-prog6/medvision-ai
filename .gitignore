@@ -21,3 +21,4 @@ data/
 segmentation_outputs/
 *.jpg
 *.png
+models/brain_tumor_unet.pth
