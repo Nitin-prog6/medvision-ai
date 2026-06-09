@@ -15,4 +15,9 @@ __pycache__/
 
 # macOS
 .DS_Store
-gradcam_result.jpg
+gradcam_result.jpgnode_modules/
+venv/
+data/
+segmentation_outputs/
+*.jpg
+*.png
