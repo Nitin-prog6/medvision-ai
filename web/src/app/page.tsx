@@ -272,9 +272,9 @@ export default function Home() {
             </div>
 
             <div className="grid gap-3">
-              <DemoLink href="/skin-cancer" label="Skin Cancer Demo" />
-              <DemoLink href="/brain-tumor" label="Brain Tumor Demo" />
-              <DemoLink href="/brain-segmentation" label="Segmentation Demo" />
+              <DemoLink href="https://nchok-medvision-ai.hf.space" label="Skin Cancer Demo" />
+              <DemoLink href="https://nchok-medvision-ai.hf.space" label="Brain Tumor Demo" />
+              <DemoLink href="https://nchok-medvision-ai.hf.space" label="Segmentation Demo" />
             </div>
           </div>
         </div>
