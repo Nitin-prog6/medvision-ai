@@ -85,7 +85,13 @@ export default function Home() {
 
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Button asChild size="lg" className="rounded-full bg-white px-7 text-black hover:bg-zinc-200">
-                <a href="#demo">Try Live Demo</a>
+                <a
+              href="https://nchok-medvision-ai.hf.space"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Try Live Demo
+            </a>
               </Button>
 
               <a
