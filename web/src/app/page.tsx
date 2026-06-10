@@ -6,21 +6,21 @@ const models = [
     metric: "85%",
     label: "Accuracy",
     text: "Seven-class dermoscopy classification using EfficientNet-B0 trained on HAM10000.",
-    href: "/skin-cancer",
+    href: "https://nchok-medvision-ai.hf.space"
   },
   {
     title: "Brain Tumor Detection",
     metric: "92%",
     label: "Accuracy",
     text: "MRI tumor/no-tumor classification with confidence scoring.",
-    href: "/brain-tumor",
+    href: "https://nchok-medvision-ai.hf.space"
   },
   {
     title: "Brain Tumor Segmentation",
     metric: "0.685",
     label: "Dice Score",
     text: "U-Net tumor mask generation with overlay visualization and area estimation.",
-    href: "/brain-segmentation",
+    href: "https://nchok-medvision-ai.hf.space"
   },
 ];
 
